@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitConnect - Mi Perfil</title>
+    <link rel="icon" type="image/x-icon" href="../img/login_icon-icons.com_64962.ico"> 
+</head>
+<body style="font-family: Arial, sans-serif; margin: 0; padding: 20px; background: #f8fafc;">
+ 
+    <nav style="margin-bottom: 30px; background-color: #ffffff; padding: 12px 24px; border-radius: 50px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);">
+        <a href="../PaginaPrincipal.html" style="color: #16a34a; text-decoration: none; margin: 0 10px;">Inicio</a> |
+        <a href="../deportista/dashboard.html" style="color: #16a34a; text-decoration: none; margin: 0 10px;">Dashboard</a> |
+        <a href="../inicioSesion/PaginaInicioSesion.html" style="color: #dc2626; text-decoration: none; margin: 0 10px;">Cerrar sesión</a> |
+        <a href="../registro/PaginaDeRegistro.html" style="color: #16a34a; text-decoration: none; margin: 0 10px;">Registrarse</a>
+    </nav>
+
+    <main style="max-width: 800px; margin: 0 auto;">
+        <h1 style="color: #166534;">Perfil de Usuario</h1>
+        <p>Bienvenido a tu perfil. Aquí podrás ver y editar tu información personal, tus objetivos deportivos y tus progresos.</p>
+ 
+        <figure style="margin: 20px 0; text-align: center;">
+            <img src="../img/perfil.jpg" alt="Foto de perfil" width="150" style="border-radius: 50%; border: 3px solid #22c55e;">
+            <figcaption style="color: #64748b;">Juan Pérez</figcaption>
+        </figure>
+
+        <section style="background-color: #ffffff; padding: 40px; border-radius: 16px; box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1); border-top: 5px solid #22c55e; margin-bottom: 20px;">
+            <h2>Información Personal</h2>
+            <ul style="list-style: none; padding: 0;">
+                <li><strong>Nombre:</strong> Juan Pérez</li>
+                <li><strong>Email:</strong> juan.perez@email.com</li>
+                <li><strong>Teléfono:</strong> +593 99 123 4567</li>
+                <li><strong>Ciudad:</strong> Quito, Ecuador</li>
+            </ul>
+        </section>
+        
+        <section style="background-color: #ffffff; padding: 40px; border-radius: 16px; box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1); border-top: 5px solid #22c55e; margin-bottom: 20px;">
+            <h2>Objetivos Deportivos</h2>
+            <ul>
+                <li> Correr 5 km en menos de 25 minutos</li>
+                <li> Levantar 80 kg en press de banca</li>
+                <li> Completar 100 km en ciclismo por semana</li>
+                <li> Meditar 10 minutos diarios</li>
+                <li> Completar 5 retos este mes</li>
+            </ul>
+        </section>
+        
+        <section style="background-color: #ffffff; padding: 40px; border-radius: 16px; box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1); border-top: 5px solid #22c55e; margin-bottom: 20px;">
+            <h2>Progreso de Entrenamientos</h2>
+            <table border="1" cellpadding="10" cellspacing="0" style="width: 100%; border-collapse: collapse;">
+                <thead>
+                    <tr style="background: #22c55e; color: white;">
+                        <th>Fecha</th>
+                        <th>Actividad</th>
+                        <th>Duración</th>
+                        <th>Calorías</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>20/05/2026</td><td> Running</td><td>30 min</td><td>320 kcal</td></tr>
+                    <tr style="background: #f0fdf4;"><td>19/05/2026</td><td> Fuerza</td><td>45 min</td><td>280 kcal</td></tr>
+                    <tr><td>18/05/2026</td><td> Ciclismo</td><td>60 min</td><td>450 kcal</td></tr>
+                    <tr style="background: #f0fdf4;"><td>17/05/2026</td><td> Yoga</td><td>30 min</td><td>120 kcal</td></tr>
+                </tbody>
+            </table>
+            <p style="margin-top: 15px;"><strong>Último progreso registrado:</strong> Correr 3 km en 20 minutos</p>
+        </section>
+ 
+        <section style="background-color: #ffffff; padding: 40px; border-radius: 16px; box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1); border-top: 5px solid #22c55e;">
+            <h2>Editar Perfil</h2>
+            <form action="#" method="get">
+                <div style="margin-bottom: 15px;">
+                    <label style="display: block; font-weight: bold;">Nombre completo:</label>
+                    <input type="text" name="nombre" value="Juan Pérez" style="width: 100%; padding: 10px; border-radius: 40px; border: 1px solid #ccc;">
+                </div>
+                <div style="margin-bottom: 15px;">
+                    <label style="display: block; font-weight: bold;">Email:</label>
+                    <input type="email" name="email" value="juan.perez@email.com" style="width: 100%; padding: 10px; border-radius: 40px; border: 1px solid #ccc;">
+                </div>
+                <div style="margin-bottom: 15px;">
+                    <label style="display: block; font-weight: bold;">Teléfono:</label>
+                    <input type="tel" name="telefono" placeholder="+593 99 123 4567" style="width: 100%; padding: 10px; border-radius: 40px; border: 1px solid #ccc;">
+                </div>
+                <div style="margin-bottom: 15px;">
+                    <label style="display: block; font-weight: bold;">Nuevo objetivo:</label>
+                    <textarea name="objetivo" rows="2" placeholder="Escribe un nuevo objetivo..." style="width: 100%; padding: 10px; border-radius: 20px; border: 1px solid #ccc;"></textarea>
+                </div>
+                <button type="submit" style="background: #22c55e; color: white; padding: 12px 24px; border: none; border-radius: 40px; cursor: pointer;">Guardar Cambios</button>
+            </form>
+        </section>
+    </main>
+
+    <footer style="text-align: center; padding: 30px; color: #64748b;">
+        <p>&copy; 2026 FitConnect. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitConnect - Crear Cuenta</title>
+</head>
+<body style="font-family: Arial, sans-serif; margin: 0; padding: 20px; background: linear-gradient(135deg, #f0fdf4, #dcfce7); min-height: 100vh; display: flex; justify-content: center; align-items: center;">
+
+    <main style="max-width: 550px; width: 100%; background: white; border-radius: 48px; padding: 40px; box-shadow: 0 25px 50px -12px rgba(0,0,0,0.25);">
+        <h1 style="color: #166534; margin-bottom: 10px; text-align: center;">Crear Cuenta</h1>
+        <p style="color: #64748b; margin-bottom: 30px; text-align: center;">Únete a la comunidad fitness más activa</p>
+        
+        <form action="../inicioSesion/PaginaInicioSesion.html" method="get">
+            <div style="margin-bottom: 20px;">
+                <label style="display: block; font-weight: bold; margin-bottom: 8px;"> Nombre completo</label>
+                <input type="text" name="fullname" required placeholder="Juan Pérez" style="width: 100%; padding: 12px 16px; border: 1px solid #e2e8f0; border-radius: 40px;">
+            </div>
+            <div style="margin-bottom: 20px;">
+                <label style="display: block; font-weight: bold; margin-bottom: 8px;"> Correo electrónico</label>
+                <input type="email" name="email" required placeholder="tu@email.com" style="width: 100%; padding: 12px 16px; border: 1px solid #e2e8f0; border-radius: 40px;">
+            </div>
+            <div style="margin-bottom: 20px;">
+                <label style="display: block; font-weight: bold; margin-bottom: 8px;"> Contraseña</label>
+                <input type="password" name="password" required placeholder="Mínimo 6 caracteres" minlength="6" style="width: 100%; padding: 12px 16px; border: 1px solid #e2e8f0; border-radius: 40px;">
+            </div>
+            <div style="margin-bottom: 20px;">
+                <label style="display: block; font-weight: bold; margin-bottom: 8px;"> Confirmar contraseña</label>
+                <input type="password" name="confirm" required placeholder="Repite tu contraseña" style="width: 100%; padding: 12px 16px; border: 1px solid #e2e8f0; border-radius: 40px;">
+            </div>
+            <div style="margin-bottom: 20px;">
+                <label style="display: block; font-weight: bold; margin-bottom: 8px;"> Tipo de cuenta</label>
+                <select name="role" style="width: 100%; padding: 12px 16px; border: 1px solid #e2e8f0; border-radius: 40px;">
+                    <option value="deportista"> Deportista</option>
+                    <option value="entrenador"> Entrenador</option>
+                </select>
+            </div>
+            <button type="submit" style="width: 100%; background: #22c55e; color: white; padding: 14px; border: none; border-radius: 40px; font-size: 16px; font-weight: bold; cursor: pointer;">Crear cuenta</button>
+        </form>
+        
+        <div style="text-align: center; margin-top: 20px;">
+            <a href="../inicioSesion/PaginaInicioSesion.html" style="color: #22c55e; text-decoration: none;">¿Ya tienes cuenta? Inicia sesión</a>
+        </div>
+        <a href="../PaginaPrincipal.html" style="display: inline-block; margin-top: 20px; color: #64748b; text-decoration: none; text-align: center; width: 100%;">← Volver al inicio</a>
+    </main>
+</body>
+</html>
